@@ -105,7 +105,8 @@ body {
   transition: color 0.1s ease-in;
 }
 
-.link:hover {
+.link:hover,
+.link:focus-visible {
   color: var(--clr-link-hover);
 }
 
@@ -157,11 +158,13 @@ body {
   transition: opacity 0.2s ease-in-out;
 }
 
-.card__image-link:hover::before {
+.card__image-link:hover::before,
+.card__image-link:focus-visible::before {
   opacity: 0.7;
 }
 
-.card__image-link:hover::after {
+.card__image-link:hover::after,
+.card__image-link:focus-visible::after {
   opacity: 1;
 }
 
