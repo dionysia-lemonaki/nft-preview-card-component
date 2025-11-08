@@ -80,6 +80,12 @@ body {
   font-size: var(--fs-lg);
   font-weight: var(--fw-light);
   line-height: var(--lh-normal);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
 }
 
 /* --- utility classes ---- */
@@ -114,3 +120,11 @@ body {
 }
 
 /* ---- end of utility classes --- */
+
+.card {
+  background-color: var(--clr-bg-card);
+  max-width: var(--max-card);
+  padding: var(--space-300);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
