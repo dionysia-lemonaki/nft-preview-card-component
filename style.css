@@ -1,0 +1,50 @@
+:root {
+  /* colors */
+  --white: hsl(0 100% 100%);
+  --black: hsl(0 0% 0%);
+  --cyan-400: hsl(178 100% 50%);
+  --blue-500: hsl(215 51% 70%);
+  --blue-800: hsl(215 32% 27%);
+  --blue-900: hsl(216 50% 16%);
+  --blue-950: hsl(217 54% 11%);
+
+  /* semantic colors */
+  --clr-bg-body: var(--blue-950);
+  --clr-bg-card: var(--blue-900);
+  --clr-text-primary: var(--blue-500);
+  --clr-text-accent: var(--cyan-400);
+  --clr-link: var(--white);
+  --clr-link-hover: var(--cyan-400);
+  --clr-border: var(--blue-800);
+  --clr-border-avatar: var(--white);
+
+  /* typography */
+  --font-sans: "Outfit", sans-serif;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fs-base: 1rem; /* 16px */
+  --fs-lg: 1.125rem; /* 18px */
+  --fs-xl: 1.375rem; /* 22px */
+  --lh-tight: 1.25;
+  --lh-normal: 1.45;
+
+  /* spacing */
+  --space-100: 8px;
+  --space-200: 16px;
+  --space-300: 24px;
+
+  /* sizing */
+  --max-card: 21.875rem; /* 350px */
+  --max-avatar: 2.0625rem; /* 33px */
+
+  /* border */
+  --border: 1px solid var(--clr-border);
+
+  /* border radius */
+  --radius-sm: 8px;
+  --radius-lg: 15px;
+
+  /* box shadow  */
+  --shadow: 0 25px 50px 0 hsl(0 0% 0% / 0.0953);
+}
