@@ -128,3 +128,44 @@ body {
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
 }
+
+.card__image-link {
+  display: block;
+  position: relative;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.card__image-link::before,
+.card__image-link::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+}
+
+.card__image-link::before {
+  background-color: var(--cyan-400);
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.card__image-link::after {
+  background-image: url("/assets/images/icon-view.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.card__image-link:hover::before {
+  opacity: 0.7;
+}
+
+.card__image-link:hover::after {
+  opacity: 1;
+}
+
+.card__image {
+  height: auto;
+  border-radius: var(--radius-sm);
+}
